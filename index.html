@@ -1,20 +1,38 @@
+</html>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="Google Sheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Submission Form</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<form method="post" action="" name="contact-form">
-			<h4>Contact Us</h4>
-			<input type="text" name="your-name" placeholder="Name">
-			<input type="text" name="your-number" placeholder="Number">
-			<input type="email" name="your-email" placeholder="Email">
-			<textarea name="message" rows="7" placeholder="Your Message"></textarea>
-			<input type="submit" value="Submit" id="submit">
-		</form>
-	</div>
-
+  <div class="container mt-5">
+    <h2>Submit Event Details</h2>
+    <form method="post" action="" name="contact-form">
+      <div class="form-group">
+        <label for="officeName">Office Name</label>
+        <input type="text" class="form-control" id="officeName" name="Office Name" required>
+      </div>
+      <div class="form-group">
+        <label for="eventName">Event Name</label>
+        <input type="text" class="form-control" id="eventName" name="Event Name" required>
+      </div>
+      <div class="form-group">
+        <label for="dateOccurred">Date Occurred</label>
+        <input type="date" class="form-control" id="dateOccurred" name="Date Occurred" required>
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments</label>
+        <textarea class="form-control" id="comments" name="Comments" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit1</button>
+<input type="submit" value="Submit" id="submit" class="btn btn-primary">
+    </form>
+    <div id="response" class="mt-3"></div>
+  </div>
 	<script src="Google Sheet.js"></script>
+  
 </body>
 </html>
